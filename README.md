@@ -10,7 +10,7 @@ This repository contains the standalone open-source implementation, instruction-
 
 > **"Is Sub-Byte Weight Quantization Worth It on Microcontrollers? Measured Sensitivity, Allocation Algorithms, and a Hardware Cost Model"**  
 > *Dhruv Narayan Bajaj*  
-> *Independent Researcher* (dhruvnarayanbajaj@users.noreply.github.com)
+> *Independent Researcher* (thedhruvbajaj@users.noreply.github.com)
 
 ---
 
