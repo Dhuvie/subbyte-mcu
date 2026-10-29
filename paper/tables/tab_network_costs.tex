@@ -1,0 +1,23 @@
+% Network-Level Costs, Footprints, Activation RAM, and MCU Datasheet Fit Checks
+% Generated automatically by scripts/compute_network_costs.py
+% Note: Cycle counts and latencies are MODELLED; MCU fit is a DATASHEET CHECK, not a deployment.
+\begin{table*}[t]
+\centering
+\caption{Network-level modelled computational cost, storage footprint, peak activation memory, and datasheet-based MCU fit check across the five evaluated benchmarks. All cycle counts and latencies are derived from our Cortex-M4 trace cost model. Target MCU compatibility denotes static datasheet fit (Flash/SRAM capacity) and does not imply physical hardware deployment.}
+\label{tab:network_costs}
+\footnotesize
+\setlength{\tabcolsep}{4.5pt}
+\begin{tabular}{llrrrrrrrr}
+\toprule
+\textbf{Benchmark} & \textbf{Dataset} & \textbf{Params} & \textbf{MACs} & \textbf{Peak RAM} & \multicolumn{2}{c}{\textbf{Flash Footprint}} & \multicolumn{2}{c}{\textbf{Modelled Latency}} & \textbf{Datasheet Fit} \\
+\cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & & & & \textbf{(KiB)} & \textbf{INT8} & \textbf{W4} & \textbf{F446RE (180\,MHz)} & \textbf{nRF52 (64\,MHz)} & \textbf{F446 / nRF52} \\
+\midrule
+SeparableCNN & CIFAR10 & 496,224 & 26.44M & 144.0 & 497.9\,KiB & 255.6\,KiB & 257.0\,ms & 722.9\,ms & No / Yes \\
+ResNet-8 & CIFAR10 & 77,360 & 12.50M & 32.0 & 76.8\,KiB & 39.1\,KiB & 121.5\,ms & 341.8\,ms & Yes / Yes \\
+FashionCNN & FMNIST & 60,320 & 5.65M & 36.8 & 60.0\,KiB & 30.5\,KiB & 54.9\,ms & 154.5\,ms & Yes / Yes \\
+CNN1D & HAR & 134,336 & 5.62M & 16.0 & 132.7\,KiB & 67.1\,KiB & 54.6\,ms & 153.7\,ms & Yes / Yes \\
+DS-CNN-S & SPEECH & 22,016 & 3.19M & 18.8 & 23.5\,KiB & 12.8\,KiB & 31.0\,ms & 87.2\,ms & Yes / Yes \\
+\bottomrule
+\end{tabular}
+\end{table*}

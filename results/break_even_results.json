@@ -1,0 +1,1875 @@
+{
+  "definition_of_p": "Cycle multiplier applied strictly to non-power-of-2 bitwidths {3,5,6,7} relative to INT8 baseline (2.0 cyc/MAC)",
+  "break_even_p_naive": 1.35,
+  "break_even_p_opt": 1.0,
+  "cortex_m4_penalty": 2.12,
+  "storage_allocs": {
+    "0.35": {
+      "b_all": {
+        "alloc": [
+          8,
+          7,
+          4,
+          6,
+          2,
+          8,
+          2,
+          2,
+          8,
+          8
+        ],
+        "flash_bytes": 27442.0,
+        "accuracy": 85.05
+      },
+      "b_dep": {
+        "alloc": [
+          8,
+          8,
+          4,
+          4,
+          2,
+          8,
+          2,
+          2,
+          8,
+          8
+        ],
+        "flash_bytes": 26578.0,
+        "accuracy": 84.85
+      }
+    },
+    "0.5": {
+      "b_all": {
+        "alloc": [
+          8,
+          8,
+          6,
+          7,
+          5,
+          7,
+          5,
+          2,
+          8,
+          8
+        ],
+        "flash_bytes": 39186.0,
+        "accuracy": 85.29
+      },
+      "b_dep": {
+        "alloc": [
+          8,
+          8,
+          8,
+          8,
+          4,
+          8,
+          4,
+          2,
+          8,
+          8
+        ],
+        "flash_bytes": 36946.0,
+        "accuracy": 85.45
+      }
+    },
+    "0.75": {
+      "b_all": {
+        "alloc": [
+          8,
+          8,
+          7,
+          8,
+          7,
+          8,
+          6,
+          5,
+          8,
+          8
+        ],
+        "flash_bytes": 58546.0,
+        "accuracy": 85.37
+      },
+      "b_dep": {
+        "alloc": [
+          8,
+          8,
+          8,
+          8,
+          4,
+          8,
+          8,
+          4,
+          8,
+          8
+        ],
+        "flash_bytes": 55378.0,
+        "accuracy": 85.56
+      }
+    }
+  },
+  "sweeps": [
+    {
+      "p": 1.0,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2012139.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.009,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2215997.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.053,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 2475520.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.08,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3220172.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.98
+        },
+        "0.5": {
+          "cycles_all": 2882498.56,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.881
+        },
+        "0.75": {
+          "cycles_all": 2475520.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.792
+        }
+      }
+    },
+    {
+      "p": 1.05,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2023198.7200000002,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.015,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2272112.64,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.079,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 2582425.6000000006,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.127,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3231232.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.984
+        },
+        "0.5": {
+          "cycles_all": 2938613.7600000002,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.898
+        },
+        "0.75": {
+          "cycles_all": 2582425.6000000006,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.827
+        }
+      }
+    },
+    {
+      "p": 1.1,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2034257.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.02,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2328227.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.106,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 2689331.2,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.174,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3242291.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.987
+        },
+        "0.5": {
+          "cycles_all": 2994728.96,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.915
+        },
+        "0.75": {
+          "cycles_all": 2689331.2,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.861
+        }
+      }
+    },
+    {
+      "p": 1.15,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2045317.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.026,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2384343.04,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.132,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 2796236.8,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.22,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3253350.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.99
+        },
+        "0.5": {
+          "cycles_all": 3050844.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.932
+        },
+        "0.75": {
+          "cycles_all": 2796236.8,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.895
+        }
+      }
+    },
+    {
+      "p": 1.2,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2056376.3199999998,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.031,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2440458.2399999998,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.159,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 2903142.3999999994,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.267,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3264409.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.994
+        },
+        "0.5": {
+          "cycles_all": 3106959.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.95
+        },
+        "0.75": {
+          "cycles_all": 2903142.3999999994,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.929
+        }
+      }
+    },
+    {
+      "p": 1.25,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2067435.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.037,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2496573.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.186,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3010048.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.314,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3275468.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 0.997
+        },
+        "0.5": {
+          "cycles_all": 3163074.56,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.967
+        },
+        "0.75": {
+          "cycles_all": 3010048.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.963
+        }
+      }
+    },
+    {
+      "p": 1.3,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2078494.7200000002,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.043,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2552688.64,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.212,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3116953.6000000006,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.36,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3286528.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.0
+        },
+        "0.5": {
+          "cycles_all": 3219189.7600000002,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 0.984
+        },
+        "0.75": {
+          "cycles_all": 3116953.6000000006,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 0.998
+        }
+      }
+    },
+    {
+      "p": 1.35,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2089553.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.048,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2608803.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.239,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3223859.2,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.407,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3297587.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.004
+        },
+        "0.5": {
+          "cycles_all": 3275304.96,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.001
+        },
+        "0.75": {
+          "cycles_all": 3223859.2,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.032
+        }
+      }
+    },
+    {
+      "p": 1.4,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2100613.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.054,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2664919.04,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.266,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3330764.8,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.454,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3308646.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.007
+        },
+        "0.5": {
+          "cycles_all": 3331420.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.018
+        },
+        "0.75": {
+          "cycles_all": 3330764.8,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.066
+        }
+      }
+    },
+    {
+      "p": 1.45,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2111672.32,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.059,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2721034.2399999998,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.292,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3437670.3999999994,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.5,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3319705.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.011
+        },
+        "0.5": {
+          "cycles_all": 3387535.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.035
+        },
+        "0.75": {
+          "cycles_all": 3437670.3999999994,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.1
+        }
+      }
+    },
+    {
+      "p": 1.5,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2122731.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.065,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2777149.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.319,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3544576.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.547,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3330764.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.014
+        },
+        "0.5": {
+          "cycles_all": 3443650.56,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.053
+        },
+        "0.75": {
+          "cycles_all": 3544576.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.135
+        }
+      }
+    },
+    {
+      "p": 1.55,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2133790.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.07,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2833264.64,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.346,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3651481.6000000006,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.594,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3341824.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.017
+        },
+        "0.5": {
+          "cycles_all": 3499765.7600000002,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.07
+        },
+        "0.75": {
+          "cycles_all": 3651481.6000000006,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.169
+        }
+      }
+    },
+    {
+      "p": 1.6,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2144849.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.076,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2889379.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.372,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3758387.2,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.64,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3352883.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.021
+        },
+        "0.5": {
+          "cycles_all": 3555880.96,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.087
+        },
+        "0.75": {
+          "cycles_all": 3758387.2,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.203
+        }
+      }
+    },
+    {
+      "p": 1.65,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2155909.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.081,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 2945495.04,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.399,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3865292.8,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.687,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3363942.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.024
+        },
+        "0.5": {
+          "cycles_all": 3611996.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.104
+        },
+        "0.75": {
+          "cycles_all": 3865292.8,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.237
+        }
+      }
+    },
+    {
+      "p": 1.7,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2166968.32,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.087,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3001610.2399999998,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.426,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 3972198.3999999994,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.734,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3375001.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.027
+        },
+        "0.5": {
+          "cycles_all": 3668111.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.121
+        },
+        "0.75": {
+          "cycles_all": 3972198.3999999994,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.271
+        }
+      }
+    },
+    {
+      "p": 1.75,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2178027.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.092,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3057725.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.452,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4079104.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.78,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3386060.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.031
+        },
+        "0.5": {
+          "cycles_all": 3724226.56,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.138
+        },
+        "0.75": {
+          "cycles_all": 4079104.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.306
+        }
+      }
+    },
+    {
+      "p": 1.8,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2189086.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.098,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3113840.6399999997,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.479,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4186009.5999999996,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.827,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3397120.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.034
+        },
+        "0.5": {
+          "cycles_all": 3780341.76,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.155
+        },
+        "0.75": {
+          "cycles_all": 4186009.5999999996,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.34
+        }
+      }
+    },
+    {
+      "p": 1.85,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2200145.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.104,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3169955.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.506,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4292915.200000001,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.874,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3408179.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.037
+        },
+        "0.5": {
+          "cycles_all": 3836456.9600000004,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.173
+        },
+        "0.75": {
+          "cycles_all": 4292915.200000001,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.374
+        }
+      }
+    },
+    {
+      "p": 1.9,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2211205.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.109,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3226071.0399999996,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.532,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4399820.799999999,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.92,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3419238.4,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.041
+        },
+        "0.5": {
+          "cycles_all": 3892572.1599999997,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.19
+        },
+        "0.75": {
+          "cycles_all": 4399820.799999999,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.408
+        }
+      }
+    },
+    {
+      "p": 1.95,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2222264.3200000003,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.115,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3282186.24,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.559,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4506726.4,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 1.967,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3430297.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.044
+        },
+        "0.5": {
+          "cycles_all": 3948687.3600000003,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.207
+        },
+        "0.75": {
+          "cycles_all": 4506726.4,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.442
+        }
+      }
+    },
+    {
+      "p": 2.0,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2233323.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.12,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3338301.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.586,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4613632.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.014,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3441356.8000000003,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.048
+        },
+        "0.5": {
+          "cycles_all": 4004802.56,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.224
+        },
+        "0.75": {
+          "cycles_all": 4613632.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.477
+        }
+      }
+    },
+    {
+      "p": 2.05,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2244382.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.126,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3394416.6399999997,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.612,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4720537.6,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.06,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3452416.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.051
+        },
+        "0.5": {
+          "cycles_all": 4060917.76,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.241
+        },
+        "0.75": {
+          "cycles_all": 4720537.6,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.511
+        }
+      }
+    },
+    {
+      "p": 2.1,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2255441.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.131,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3450531.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.639,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4827443.200000001,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.107,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3463475.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.054
+        },
+        "0.5": {
+          "cycles_all": 4117032.9600000004,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.258
+        },
+        "0.75": {
+          "cycles_all": 4827443.200000001,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.545
+        }
+      }
+    },
+    {
+      "p": 2.15,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2266501.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.137,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3506647.0399999996,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.666,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 4934348.799999999,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.154,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3474534.4,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.058
+        },
+        "0.5": {
+          "cycles_all": 4173148.1599999997,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.275
+        },
+        "0.75": {
+          "cycles_all": 4934348.799999999,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.579
+        }
+      }
+    },
+    {
+      "p": 2.2,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2277560.3200000003,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.142,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3562762.24,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.692,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5041254.4,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.2,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3485593.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.061
+        },
+        "0.5": {
+          "cycles_all": 4229263.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.293
+        },
+        "0.75": {
+          "cycles_all": 5041254.4,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.614
+        }
+      }
+    },
+    {
+      "p": 2.25,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2288619.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.148,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3618877.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.719,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5148160.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.247,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3496652.8000000003,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.064
+        },
+        "0.5": {
+          "cycles_all": 4285378.5600000005,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.31
+        },
+        "0.75": {
+          "cycles_all": 5148160.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.648
+        }
+      }
+    },
+    {
+      "p": 2.3,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2299678.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.153,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3674992.6399999997,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.746,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5255065.6,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.294,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3507712.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.068
+        },
+        "0.5": {
+          "cycles_all": 4341493.76,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.327
+        },
+        "0.75": {
+          "cycles_all": 5255065.6,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.682
+        }
+      }
+    },
+    {
+      "p": 2.35,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2310737.92,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.159,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3731107.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.772,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5361971.200000001,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.34,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3518771.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.071
+        },
+        "0.5": {
+          "cycles_all": 4397608.960000001,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.344
+        },
+        "0.75": {
+          "cycles_all": 5361971.200000001,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.716
+        }
+      }
+    },
+    {
+      "p": 2.4,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2321797.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.165,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3787223.0399999996,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.799,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5468876.799999999,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.387,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3529830.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.075
+        },
+        "0.5": {
+          "cycles_all": 4453724.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.361
+        },
+        "0.75": {
+          "cycles_all": 5468876.799999999,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.75
+        }
+      }
+    },
+    {
+      "p": 2.45,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2332856.3200000003,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.17,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3843338.24,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.825,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5575782.4,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.434,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3540889.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.078
+        },
+        "0.5": {
+          "cycles_all": 4509839.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.378
+        },
+        "0.75": {
+          "cycles_all": 5575782.4,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.785
+        }
+      }
+    },
+    {
+      "p": 2.5,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2343915.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.176,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3899453.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.852,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5682688.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.48,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3551948.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.081
+        },
+        "0.5": {
+          "cycles_all": 4565954.5600000005,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.396
+        },
+        "0.75": {
+          "cycles_all": 5682688.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.819
+        }
+      }
+    },
+    {
+      "p": 2.55,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2354974.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.181,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 3955568.6399999997,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.879,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5789593.6,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.527,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3563008.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.085
+        },
+        "0.5": {
+          "cycles_all": 4622069.76,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.413
+        },
+        "0.75": {
+          "cycles_all": 5789593.6,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.853
+        }
+      }
+    },
+    {
+      "p": 2.6,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2366033.9200000004,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.187,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4011683.8400000003,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.905,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 5896499.200000001,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.574,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3574067.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.088
+        },
+        "0.5": {
+          "cycles_all": 4678184.960000001,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.43
+        },
+        "0.75": {
+          "cycles_all": 5896499.200000001,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.887
+        }
+      }
+    },
+    {
+      "p": 2.65,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2377093.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.192,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4067799.0399999996,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.932,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6003404.799999999,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.62,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3585126.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.091
+        },
+        "0.5": {
+          "cycles_all": 4734300.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.447
+        },
+        "0.75": {
+          "cycles_all": 6003404.799999999,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.922
+        }
+      }
+    },
+    {
+      "p": 2.7,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2388152.3200000003,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.198,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4123914.24,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.959,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6110310.4,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.667,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3596185.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.095
+        },
+        "0.5": {
+          "cycles_all": 4790415.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.464
+        },
+        "0.75": {
+          "cycles_all": 6110310.4,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.956
+        }
+      }
+    },
+    {
+      "p": 2.75,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2399211.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.203,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4180029.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 1.985,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6217216.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.714,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3607244.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.098
+        },
+        "0.5": {
+          "cycles_all": 4846530.5600000005,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.481
+        },
+        "0.75": {
+          "cycles_all": 6217216.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 1.99
+        }
+      }
+    },
+    {
+      "p": 2.8,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2410270.72,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.209,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4236144.64,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 2.012,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6324121.6,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.76,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3618304.0,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.101
+        },
+        "0.5": {
+          "cycles_all": 4902645.76,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.498
+        },
+        "0.75": {
+          "cycles_all": 6324121.6,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 2.024
+        }
+      }
+    },
+    {
+      "p": 2.85,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2421329.9200000004,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.214,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4292259.840000001,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 2.039,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6431027.200000001,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.807,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3629363.2,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.105
+        },
+        "0.5": {
+          "cycles_all": 4958760.960000001,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.516
+        },
+        "0.75": {
+          "cycles_all": 6431027.200000001,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 2.058
+        }
+      }
+    },
+    {
+      "p": 2.9,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2432389.12,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.22,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4348375.04,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 2.065,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6537932.799999999,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.853,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3640422.4000000004,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.108
+        },
+        "0.5": {
+          "cycles_all": 5014876.16,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.533
+        },
+        "0.75": {
+          "cycles_all": 6537932.799999999,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 2.093
+        }
+      }
+    },
+    {
+      "p": 2.95,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2443448.3200000003,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.226,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4404490.24,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 2.092,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6644838.4,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.9,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3651481.6,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.112
+        },
+        "0.5": {
+          "cycles_all": 5070991.36,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.55
+        },
+        "0.75": {
+          "cycles_all": 6644838.4,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 2.127
+        }
+      }
+    },
+    {
+      "p": 3.0,
+      "storage_eval_opt": {
+        "0.35": {
+          "cycles_all": 2454507.52,
+          "cycles_dep": 1993707.52,
+          "speedup_dep": 1.231,
+          "acc_all": 85.05,
+          "acc_dep": 84.85
+        },
+        "0.5": {
+          "cycles_all": 4460605.44,
+          "cycles_dep": 2105405.44,
+          "speedup_dep": 2.119,
+          "acc_all": 85.29,
+          "acc_dep": 85.45
+        },
+        "0.75": {
+          "cycles_all": 6751744.0,
+          "cycles_dep": 2291200.0,
+          "speedup_dep": 2.947,
+          "acc_all": 85.37,
+          "acc_dep": 85.56
+        }
+      },
+      "storage_eval_naive": {
+        "0.35": {
+          "cycles_all": 3662540.8,
+          "cycles_dep": 3285053.44,
+          "speedup_dep": 1.115
+        },
+        "0.5": {
+          "cycles_all": 5127106.5600000005,
+          "cycles_dep": 3271782.4,
+          "speedup_dep": 1.567
+        },
+        "0.75": {
+          "cycles_all": 6751744.0,
+          "cycles_dep": 3124326.4,
+          "speedup_dep": 2.161
+        }
+      }
+    }
+  ]
+}

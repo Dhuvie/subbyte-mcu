@@ -1,0 +1,3852 @@
+[
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "title": "CIFAR-10 / SeparableCNN",
+    "collapse_floor": 20.0,
+    "budgets": {
+      "25": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.57,
+          "std": 0.75,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.91,
+          "std": 0.21,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.91
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.57,
+          "std": 0.75,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.98,
+          "std": 0.23,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.98
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.57,
+          "std": 0.75,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.83,
+          "std": 0.17,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.83
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 84.03,
+          "std": 1.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 84.03
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.52,
+          "std": 0.31,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.52
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "35": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 77.76,
+          "std": 2.09,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 77.76
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.21,
+          "std": 0.26,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.21
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 17.05,
+          "std": 15.74,
+          "collapse_rate": "4/5",
+          "collapse_pct": 80.0,
+          "mean_surviving": 45.13
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 84.74,
+          "std": 1.01,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 84.74
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 75.92,
+          "std": 3.05,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 75.92
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.2,
+          "std": 0.17,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.2
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 84.03,
+          "std": 1.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 84.03
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.41,
+          "std": 0.17,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.41
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "50": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 85.88,
+          "std": 1.31,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 85.88
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.61,
+          "std": 0.24,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.61
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 32.0,
+          "std": 21.54,
+          "collapse_rate": "2/5",
+          "collapse_pct": 40.0,
+          "mean_surviving": 45.77
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.42,
+          "std": 0.43,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.42
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 85.65,
+          "std": 0.59,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 85.65
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.54,
+          "std": 0.36,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.54
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 84.03,
+          "std": 1.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 84.03
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.6,
+          "std": 0.48,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.6
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "75": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.12,
+          "std": 1.44,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.12
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.76,
+          "std": 0.27,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.76
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 37.72,
+          "std": 30.11,
+          "collapse_rate": "2/5",
+          "collapse_pct": 40.0,
+          "mean_surviving": 55.13
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.7,
+          "std": 0.65,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.7
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 85.77,
+          "std": 0.67,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 85.77
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.53,
+          "std": 0.34,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.53
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 84.03,
+          "std": 1.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 84.03
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.54,
+          "std": 0.38,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.54
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "100": {
+        "dp_measured_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "dp_measured_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "title": "CIFAR-10 / ResNet-8",
+    "collapse_floor": 20.0,
+    "budgets": {
+      "25": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.21,
+          "std": 1.82,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 79.73,
+          "std": 0.17,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 79.73
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.21,
+          "std": 1.82,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 79.66,
+          "std": 0.18,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 79.66
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 10.21,
+          "std": 1.82,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 79.58,
+          "std": 0.31,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 79.58
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 70.07,
+          "std": 9.1,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 70.07
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.67,
+          "std": 0.3,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.67
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "35": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 65.07,
+          "std": 5.31,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 65.07
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.07,
+          "std": 0.41,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.07
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 16.06,
+          "std": 7.85,
+          "collapse_rate": "4/5",
+          "collapse_pct": 80.0,
+          "mean_surviving": 29.51
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.5,
+          "std": 0.83,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.5
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 64.44,
+          "std": 5.58,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 64.44
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.14,
+          "std": 0.46,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.14
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 70.07,
+          "std": 9.1,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 70.07
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.73,
+          "std": 0.21,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.73
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "50": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.88,
+          "std": 0.8,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.88
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.85,
+          "std": 0.32,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.85
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 54.67,
+          "std": 24.34,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 54.67
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.27,
+          "std": 0.28,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.27
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.97,
+          "std": 0.84,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.97
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.87,
+          "std": 0.18,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.87
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 70.07,
+          "std": 9.1,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 70.07
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.73,
+          "std": 0.3,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.73
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "75": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.27,
+          "std": 0.56,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.27
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.9,
+          "std": 0.38,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.9
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 58.91,
+          "std": 28.24,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 58.91
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.53,
+          "std": 0.3,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.53
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.46,
+          "std": 0.46,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.46
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.87,
+          "std": 0.19,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.87
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 70.07,
+          "std": 9.1,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 70.07
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 83.62,
+          "std": 0.3,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 83.62
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "100": {
+        "dp_measured_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "dp_measured_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "title": "Fashion-MNIST / CNN",
+    "collapse_floor": 25.0,
+    "budgets": {
+      "25": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 29.44,
+          "std": 16.57,
+          "collapse_rate": "2/5",
+          "collapse_pct": 40.0,
+          "mean_surviving": 39.67
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.05,
+          "std": 0.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.05
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 29.44,
+          "std": 16.57,
+          "collapse_rate": "2/5",
+          "collapse_pct": 40.0,
+          "mean_surviving": 39.67
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.0,
+          "std": 0.18,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.0
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 29.44,
+          "std": 16.57,
+          "collapse_rate": "2/5",
+          "collapse_pct": 40.0,
+          "mean_surviving": 39.67
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.17,
+          "std": 0.15,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.17
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.91,
+          "std": 4.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.91
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.36,
+          "std": 0.44,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.36
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "35": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 68.1,
+          "std": 19.77,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 68.1
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.31,
+          "std": 0.19,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.31
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 46.66,
+          "std": 17.85,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 46.66
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.12,
+          "std": 0.26,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.12
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 68.1,
+          "std": 19.77,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 68.1
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.43,
+          "std": 0.24,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.43
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.91,
+          "std": 4.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.91
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.4,
+          "std": 0.25,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.4
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "50": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 89.01,
+          "std": 1.21,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 89.01
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.34,
+          "std": 0.31,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.34
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 63.25,
+          "std": 28.42,
+          "collapse_rate": "1/5",
+          "collapse_pct": 20.0,
+          "mean_surviving": 73.83
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.23,
+          "std": 0.19,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.23
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.79,
+          "std": 1.95,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.79
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.22,
+          "std": 0.35,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.22
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.91,
+          "std": 4.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.91
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.19,
+          "std": 0.82,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.19
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "75": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.7,
+          "std": 0.13,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.7
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.41,
+          "std": 0.2,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.41
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 67.39,
+          "std": 31.91,
+          "collapse_rate": "1/5",
+          "collapse_pct": 20.0,
+          "mean_surviving": 79.0
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.32,
+          "std": 0.19,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.32
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.63,
+          "std": 0.11,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.63
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.51,
+          "std": 0.33,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.51
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.91,
+          "std": 4.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.91
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.52,
+          "std": 0.09,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.52
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "100": {
+        "dp_measured_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "dp_measured_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "title": "UCI HAR / 1D-CNN",
+    "collapse_floor": 30.0,
+    "budgets": {
+      "25": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.49,
+          "std": 5.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.49
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.42,
+          "std": 1.19,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.42
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.49,
+          "std": 5.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.49
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.41,
+          "std": 1.29,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.41
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 87.49,
+          "std": 5.16,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 87.49
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.53,
+          "std": 0.98,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.53
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.67,
+          "std": 0.27,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.67
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.46,
+          "std": 0.75,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.46
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "35": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.26,
+          "std": 2.74,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.26
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.72,
+          "std": 0.76,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.72
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 89.64,
+          "std": 4.53,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 89.64
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.34,
+          "std": 0.84,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.34
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.26,
+          "std": 2.74,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.26
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.65,
+          "std": 1.22,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.65
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.67,
+          "std": 0.27,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.67
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.42,
+          "std": 0.79,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.42
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "50": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.61,
+          "std": 0.61,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.61
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.32,
+          "std": 0.67,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.32
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 90.48,
+          "std": 4.81,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 90.48
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.39,
+          "std": 0.97,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.39
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.61,
+          "std": 0.6,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.61
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.44,
+          "std": 0.79,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.44
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.67,
+          "std": 0.27,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.67
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.03,
+          "std": 1.25,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.03
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "75": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.68,
+          "std": 0.62,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.68
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.63,
+          "std": 0.79,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.63
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 92.45,
+          "std": 2.46,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 92.45
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.49,
+          "std": 0.76,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.49
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.7,
+          "std": 0.57,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.7
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.71,
+          "std": 0.94,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.71
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.67,
+          "std": 0.27,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.67
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 93.31,
+          "std": 0.97,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 93.31
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "100": {
+        "dp_measured_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "dp_measured_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      }
+    }
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "title": "Speech Commands / DS-CNN",
+    "collapse_floor": 20.0,
+    "budgets": {
+      "25": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.49,
+          "std": 1.24,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.49
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.48,
+          "std": 1.12,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.48
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.52,
+          "std": 0.98,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.52
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.44,
+          "std": 5.14,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.44
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.83,
+          "std": 0.96,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.83
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "35": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.52,
+          "std": 1.13,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.52
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.49,
+          "std": 1.3,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.49
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 14.13,
+          "std": 3.62,
+          "collapse_rate": "5/5",
+          "collapse_pct": 100.0,
+          "mean_surviving": 0.0
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 86.6,
+          "std": 0.98,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 86.6
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.44,
+          "std": 5.14,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.44
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.89,
+          "std": 1.03,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.89
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "50": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 71.59,
+          "std": 10.51,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 71.59
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.69,
+          "std": 0.82,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.69
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 17.03,
+          "std": 6.52,
+          "collapse_rate": "4/5",
+          "collapse_pct": 80.0,
+          "mean_surviving": 27.4
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 89.3,
+          "std": 1.24,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 89.3
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 63.91,
+          "std": 13.82,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 63.91
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.77,
+          "std": 0.79,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.77
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.44,
+          "std": 5.14,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.44
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.94,
+          "std": 0.75,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.94
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "75": {
+        "dp_measured_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.41,
+          "std": 0.96,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.41
+        },
+        "dp_measured_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.71,
+          "std": 0.87,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.71
+        },
+        "hawq_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 56.15,
+          "std": 26.79,
+          "collapse_rate": "1/5",
+          "collapse_pct": 20.0,
+          "mean_surviving": 65.9
+        },
+        "hawq_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.35,
+          "std": 0.81,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.35
+        },
+        "greedy_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 89.24,
+          "std": 3.66,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 89.24
+        },
+        "greedy_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.69,
+          "std": 0.71,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.69
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 81.44,
+          "std": 5.14,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 81.44
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "evaluated",
+          "n_seeds": 5,
+          "mean": 91.73,
+          "std": 0.74,
+          "collapse_rate": "0/5",
+          "collapse_pct": 0.0,
+          "mean_surviving": 91.73
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      },
+      "100": {
+        "dp_measured_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "dp_measured_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "hawq_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "greedy_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w4_endpoints_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "uniform_w8_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "formula_score_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "size_only_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "random_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_ptq": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        },
+        "inverted_finetune": {
+          "status": "not_evaluated",
+          "reason": "Ablation/fixed-budget constraint",
+          "n_seeds": 0,
+          "mean": null,
+          "std": null,
+          "collapse_rate": "N/A"
+        }
+      }
+    }
+  }
+]

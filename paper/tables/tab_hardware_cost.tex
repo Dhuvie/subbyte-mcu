@@ -1,0 +1,27 @@
+\begin{table*}[!t]
+\centering
+\caption{Instruction-Level Execution Cost Model and Unicorn Emulator Instruction Traces Across Bitwidths on ARM Cortex-M4 (180\,MHz). Zero-wait-state memory assumption; Unicorn-emulated Thumb-2 instruction counts per 128 MACs using verified \texttt{SXTB16} and \texttt{SMLAD} DSP assembly.}
+\label{tab:hardware_cost}
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Kernel Variant} & \textbf{Path} & \textbf{Trace Inst / 128 MAC} & \textbf{Trace Cyc / MAC} & \textbf{Model Cyc / MAC} & \textbf{Penalty vs INT8 (Like-for-Like)} & \textbf{Flash Savings} \\
+\midrule
+INT8 Baseline (CMSIS-NN Style) & SIMD & 381 & 3.38 & 1.50--2.00 & 1.00$\times$ (SIMD Baseline) & 0.0\% \\
+INT8 Scalar Baseline & Scalar & 428 & 3.88 & 2.00 & 1.00$\times$ (Scalar Baseline) & 0.0\% \\
+\midrule
+INT4 Optimised SIMD (SXTB16) & SIMD & 608 & 5.28 & 1.75 & 1.56$\times$ (vs INT8 SIMD) & 50.0\% \\
+INT4 Naive Scalar (SBFX) & Scalar & 527 & 4.52 & 2.88 & 1.16$\times$ (vs INT8 Scalar) & 50.0\% \\
+INT2 Optimised SIMD (SXTB16) & SIMD & 565 & 4.51 & 1.56 & 1.33$\times$ (vs INT8 SIMD) & 75.0\% \\
+INT2 Naive Scalar (SBFX) & Scalar & 469 & 3.82 & 2.69 & 0.98$\times$ (vs INT8 Scalar) & 75.0\% \\
+\midrule
+INT3 Aligned Unpack + SMLAD & SIMD & 817 & 7.16 & 3.00 & 2.12$\times$ (vs INT8 SIMD) & 62.5\% \\
+INT3 Scalar Bitfield Extract & Scalar & 1430 & 12.23 & 4.00 & 3.15$\times$ (vs INT8 Scalar) & 62.5\% \\
+INT5 Sub-Byte Unaligned Scalar & Scalar & 1526 & 13.23 & 4.25 & 3.41$\times$ (vs INT8 Scalar) & 37.5\% \\
+INT6 Semi-Aligned Scalar & Scalar & 1440 & 12.56 & 4.25 & 3.24$\times$ (vs INT8 Scalar) & 25.0\% \\
+INT7 Sub-Byte Unaligned Scalar & Scalar & 1527 & 13.24 & 4.50 & 3.41$\times$ (vs INT8 Scalar) & 12.5\% \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

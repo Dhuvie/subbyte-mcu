@@ -1,0 +1,30 @@
+\begin{table*}[!t]
+\centering
+\caption{Ablation analysis on CIFAR-10 with SeparableCNN across 5 seeds (42--46). Reports mean accuracy, standard deviation, and 95\% confidence intervals across sensitivity sample size, endpoint protection across budgets, scale granularity, and fine-tuning epochs. Evaluated on 50\% budget measured-sensitivity DP knapsack allocation (except endpoint protection, which evaluates 25\%, 35\%, and 50\% DP allocations). Fine-tuning schedule evaluates epochs under per-tensor scaling.}
+\label{tab:ablations}
+\footnotesize
+\begin{tabular}{llccc}
+\toprule
+\textbf{Ablation Factor} & \textbf{Configuration} & \textbf{Mean Acc (\%)} & \textbf{Std (\%)} & \textbf{95\% CI (\%)} \\
+\midrule
+\textbf{Endpoint Protection} & 25\% Budget (Protected INT8) & 81.91 & 0.64 & [81.12, 82.70] \\
+ & 25\% Budget (Unprotected) & 78.07 & 0.66 & [77.25, 78.89] \\
+ & 35\% Budget (Protected INT8) & 87.21 & 0.25 & [86.90, 87.53] \\
+ & 35\% Budget (Unprotected) & 87.05 & 0.21 & [86.79, 87.32] \\
+ & 50\% Budget (Protected INT8) & 87.61 & 0.23 & [87.33, 87.89] \\
+ & 50\% Budget (Unprotected) & 87.62 & 0.38 & [87.14, 88.09] \\
+\midrule
+\textbf{Sensitivity Sample Count ($N_{val}$)} & $N = 100$ Samples & 86.54 & 1.07 & [85.21, 87.87] \\
+ & $N = 500$ Samples & 87.30 & 0.32 & [86.90, 87.69] \\
+ & $N = 2000$ Samples & 87.54 & 0.28 & [87.20, 87.88] \\
+\midrule
+\textbf{Scale Granularity} & Per-Channel Scales & 87.71 & 0.29 & [87.35, 88.07] \\
+ & Per-Tensor Scales & 87.64 & 0.26 & [87.32, 87.96] \\
+\midrule
+\textbf{Fine-Tuning Schedule} & 0 Epochs (Zero-Shot PTQ) & 85.88 & 1.31 & [84.25, 87.50] \\
+ & 1 Epoch Fine-Tuning & 87.35 & 0.20 & [87.10, 87.60] \\
+ & 5 Epochs (Per-Tensor Scaling) & 87.64 & 0.26 & [87.32, 87.96] \\
+ & 10 Epochs Fine-Tuning & 87.86 & 0.38 & [87.38, 88.33] \\
+\bottomrule
+\end{tabular}
+\end{table*}

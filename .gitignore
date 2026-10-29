@@ -1,0 +1,66 @@
+# ==============================================================================
+# Git Ignore Configuration: Sub-Byte MCU Clean Release Package
+# ==============================================================================
+
+# --- Python & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# --- Virtual Environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- Build, Distribution & Testing Caches ---
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --- Native Compilation Artifacts ---
+*.so
+*.dylib
+*.dll
+*.o
+*.obj
+*.pdb
+*.lib
+*.a
+
+# --- LaTeX Intermediates (Preserve paper/paper.pdf) ---
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.xdv
+paper/*.synctex.gz
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.nav
+paper/*.snm
+paper/*.vrb
+
+# --- Editors, IDEs, and Operating Systems ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# --- Logs, Diagnostics & Local Scratch ---
+logs/
+data/
+scratch/

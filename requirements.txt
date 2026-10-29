@@ -1,0 +1,17 @@
+# Pinned dependencies for Sub-Byte MCU Research
+# Tested on Python 3.12 (CPython 3.12.13 on Windows x86_64)
+
+torch==2.6.0
+torchvision==0.21.0
+numpy==2.5.2
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
+statsmodels==0.15.0
+matplotlib==3.11.2
+pypdf==6.21.1
+unicorn==2.1.4
+pyyaml==6.0.3
+capstone==5.0.9
+pyelftools==0.33
+pyarrow==26.0.0

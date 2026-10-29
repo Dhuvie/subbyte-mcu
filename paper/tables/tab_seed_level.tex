@@ -1,0 +1,42 @@
+\begin{table*}[!t]
+\centering
+\caption{Per-Model, Per-Budget Fine-Tuned Accuracy and Seed-Level Spread Across 5 Independently Trained Seeds (Seeds 42--46) across all model/budget pairs. Every cell reports mean $\pm$ standard deviation, exact seed-level DP minus HAWQ differences, and mean paired delta; cells marked [floor] or [infeas] denote structural endpoint constraints.}
+\label{tab:seed_level}
+\scriptsize
+\setlength{\tabcolsep}{2.0pt}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Domain / Architecture} & \textbf{Budget} & \textbf{Measured-Sensitivity DP} & \textbf{HAWQ} & \textbf{Uniform W4+Endpoints} & \textbf{Seed-Level $\Delta$ (S42, S43, S44, S45, S46)} & \textbf{Mean $\Delta$ (\%)} \\
+\midrule
+\multicolumn{7}{l}{\textbf{SeparableCNN (CIFAR-10)}}\\
+\quad Target Budget 25\% & 25\% [floor] & 81.91\% $\pm$ 0.21\% & 81.98\% $\pm$ 0.23\% & 87.52\% $\pm$ 0.31\% & [-0.03, +0.16, -0.06, -0.35, -0.06] & -0.07\% \\
+\quad Target Budget 35\% & 35\% & 87.21\% $\pm$ 0.26\% & 84.74\% $\pm$ 1.01\% & 87.41\% $\pm$ 0.17\% & [+4.28, +2.46, +1.73, +2.50, +1.38] & +2.47\% \\
+\quad Target Budget 50\% & 50\% & 87.61\% $\pm$ 0.24\% & 86.42\% $\pm$ 0.43\% & 87.60\% $\pm$ 0.48\% & [+1.52, +0.78, +1.35, +1.51, +0.77] & +1.19\% \\
+\quad Target Budget 75\% & 75\% & 87.76\% $\pm$ 0.27\% & 86.70\% $\pm$ 0.65\% & 87.54\% $\pm$ 0.38\% & [+1.76, +0.08, +1.34, +1.35, +0.77] & +1.06\% \\
+\midrule
+\multicolumn{7}{l}{\textbf{ResNet-8 (CIFAR-10)}}\\
+\quad Target Budget 25\% & 25\% [floor] & 79.73\% $\pm$ 0.17\% & 79.66\% $\pm$ 0.18\% & 83.67\% $\pm$ 0.30\% & [+0.24, -0.01, -0.07, +0.02, +0.19] & +0.07\% \\
+\quad Target Budget 35\% & 35\% & 83.07\% $\pm$ 0.41\% & 81.50\% $\pm$ 0.83\% & 83.73\% $\pm$ 0.21\% & [+1.81, +3.11, +2.23, +0.10, +0.61] & +1.57\% \\
+\quad Target Budget 50\% & 50\% & 83.85\% $\pm$ 0.32\% & 83.27\% $\pm$ 0.28\% & 83.73\% $\pm$ 0.30\% & [+0.19, +0.84, +0.99, +0.29, +0.60] & +0.58\% \\
+\quad Target Budget 75\% & 75\% & 83.90\% $\pm$ 0.38\% & 83.53\% $\pm$ 0.30\% & 83.62\% $\pm$ 0.30\% & [+0.35, +0.66, +0.55, -0.12, +0.41] & +0.37\% \\
+\midrule
+\multicolumn{7}{l}{\textbf{CNN (Fashion-MNIST)}}\\
+\quad Target Budget 25\% & 25\% [floor] & 91.05\% $\pm$ 0.22\% & 91.00\% $\pm$ 0.18\% & 91.36\% $\pm$ 0.44\% & [+0.32, +0.04, +0.05, -0.21, +0.07] & +0.05\% \\
+\quad Target Budget 35\% & 35\% & 91.31\% $\pm$ 0.19\% & 91.12\% $\pm$ 0.26\% & 91.40\% $\pm$ 0.25\% & [+0.43, +0.41, +0.28, -0.15, -0.03] & +0.19\% \\
+\quad Target Budget 50\% & 50\% & 91.34\% $\pm$ 0.31\% & 91.23\% $\pm$ 0.19\% & 91.19\% $\pm$ 0.82\% & [-0.60, +0.21, +0.36, +0.31, +0.27] & +0.11\% \\
+\quad Target Budget 75\% & 75\% & 91.41\% $\pm$ 0.20\% & 91.32\% $\pm$ 0.19\% & 91.52\% $\pm$ 0.09\% & [+0.25, +0.23, +0.19, -0.11, -0.10] & +0.09\% \\
+\midrule
+\multicolumn{7}{l}{\textbf{DSCNN (Speech Commands)}}\\
+\quad Target Budget 25\% & 25\% [infeas] & 86.49\% $\pm$ 1.24\% & 86.48\% $\pm$ 1.12\% & 91.83\% $\pm$ 0.96\% & [+0.20, -0.27, -0.13, +0.06, +0.20] & +0.01\% \\
+\quad Target Budget 35\% & 35\% [infeas] & 86.52\% $\pm$ 1.13\% & 86.49\% $\pm$ 1.30\% & 91.89\% $\pm$ 1.03\% & [+0.66, +0.13, -0.13, -0.20, -0.33] & +0.03\% \\
+\quad Target Budget 50\% & 50\% & 91.69\% $\pm$ 0.82\% & 89.30\% $\pm$ 1.24\% & 91.94\% $\pm$ 0.75\% & [+3.93, +1.27, +2.60, +2.34, +1.80] & +2.39\% \\
+\quad Target Budget 75\% & 75\% & 91.71\% $\pm$ 0.87\% & 91.35\% $\pm$ 0.81\% & 91.73\% $\pm$ 0.74\% & [+0.93, +0.06, -0.33, +0.27, +0.87] & +0.36\% \\
+\midrule
+\multicolumn{7}{l}{\textbf{1D-CNN (HAR)}}\\
+\quad Target Budget 25\% & 25\% [floor] & 93.42\% $\pm$ 1.19\% & 93.41\% $\pm$ 1.29\% & 93.46\% $\pm$ 0.75\% & [+0.11, -0.51, +0.40, +0.00, +0.04] & +0.01\% \\
+\quad Target Budget 35\% & 35\% & 93.72\% $\pm$ 0.76\% & 93.34\% $\pm$ 0.84\% & 93.42\% $\pm$ 0.79\% & [+0.27, +0.54, -0.03, +0.44, +0.71] & +0.39\% \\
+\quad Target Budget 50\% & 50\% & 93.32\% $\pm$ 0.67\% & 93.39\% $\pm$ 0.97\% & 93.03\% $\pm$ 1.25\% & [-0.37, +0.14, -0.34, -0.27, +0.45] & -0.08\% \\
+\quad Target Budget 75\% & 75\% & 93.63\% $\pm$ 0.79\% & 93.49\% $\pm$ 0.76\% & 93.31\% $\pm$ 0.97\% & [+0.14, +0.58, -0.54, -0.21, +0.74] & +0.14\% \\
+\bottomrule
+\end{tabular}
+\end{table*}

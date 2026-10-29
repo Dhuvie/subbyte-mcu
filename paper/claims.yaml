@@ -1,0 +1,134 @@
+claims:
+- id: CLAIM_C01_BASELINE_PARAMS
+  statement: The SeparableCNN benchmark architecture contains 502222 total parameters
+    (496224 conv/linear weights).
+  macro: MacroBaselineParams
+  expected_val: 502222.0
+- id: CLAIM_C02_ADDITIVITY_RHO
+  statement: Linear additivity Spearman rank correlation across 200 random allocations
+    is rho = 0.941.
+  macro: MacroAdditivityRho
+  expected_val: 0.941
+- id: CLAIM_C03_ADDITIVITY_MAE
+  statement: Clipped absolute error for linear additivity prediction is 16.97%.
+  macro: MacroAdditivityMAE
+  expected_val: 16.97
+- id: CLAIM_C04_PAIRED_DP_HAWQ_MEAN_FT
+  statement: Overall mean advantage of DP Knapsack over HAWQ in the fine-tuned regime
+    is 0.55%.
+  macro: MacroBootDPHAWQMeanFT
+  expected_val: 0.55
+- id: CLAIM_C05_PAIRED_DP_HAWQ_MEDIAN_FT
+  statement: Overall median advantage of DP Knapsack over HAWQ in the fine-tuned regime
+    is 0.37%.
+  macro: MacroBootDPHAWQMedianFT
+  expected_val: 0.37
+- id: CLAIM_C06_PAIRED_DP_HAWQ_CI_LOW_FT
+  statement: 95% BCa confidence interval lower bound for overall DP vs HAWQ is -0.25%.
+  macro: MacroBootDPHAWQCILowFT
+  expected_val: -0.25
+- id: CLAIM_C07_PAIRED_DP_HAWQ_WILCOXON_P_FT
+  statement: Two-sided exact permutation p-value for overall DP vs HAWQ is p = 0.0625.
+  macro: MacroBootDPHAWQWilcoxonPFT
+  expected_val: 0.0625
+- id: CLAIM_C08_PAIRED_MEAN_COLLAPSE
+  statement: Mean advantage of DP Knapsack over HAWQ in the collapse regime (<=35%
+    budget) is 0.47%.
+  macro: MacroBootDPHAWQMeanCollapse
+  expected_val: 0.47
+- id: CLAIM_C09_PAIRED_MEDIAN_COLLAPSE
+  statement: Median advantage of DP Knapsack over HAWQ in the collapse regime (<=35%
+    budget) is 0.20%.
+  macro: MacroBootDPHAWQMedianCollapse
+  expected_val: 0.2
+- id: CLAIM_C10_PAIRED_WILCOXON_P_COLLAPSE
+  statement: Exact permutation p-value for DP vs HAWQ in the collapse regime is p
+    = 0.0625.
+  macro: MacroBootDPHAWQWilcoxonPCollapse
+  expected_val: 0.0625
+- id: CLAIM_C11_PAIRED_MEAN_PLATEAU
+  statement: Mean difference of DP vs HAWQ in the deployable plateau regime (>=50%
+    budget) is 0.62%.
+  macro: MacroBootDPHAWQMeanPlateau
+  expected_val: 0.62
+- id: CLAIM_C12_PAIRED_MEDIAN_PLATEAU
+  statement: Median difference of DP vs HAWQ in the deployable plateau regime (>=50%
+    budget) is 0.47%.
+  macro: MacroBootDPHAWQMedianPlateau
+  expected_val: 0.47
+- id: CLAIM_C13_PAIRED_WILCOXON_P_PLATEAU
+  statement: Exact permutation p-value for DP vs HAWQ in the plateau regime is p =
+    0.1250.
+  macro: MacroBootDPHAWQWilcoxonPPlateau
+  expected_val: 0.125
+- id: CLAIM_C14_HAR_DEFICIT_MEAN
+  statement: Mean deficit of DP vs. HAWQ on UCI HAR is 0.11%.
+  macro: MacroDPHARDeficitMean
+  expected_val: 0.11
+- id: CLAIM_C15_FMNIST_W4_ADVANTAGE
+  statement: Advantage of DP Knapsack over Uniform W4 at 50% on Fashion-MNIST is 0.15%.
+  macro: MacroFMNISTFiftyUniformWFourAdv
+  expected_val: 0.15
+- id: CLAIM_C16_ANOVA_VAR_METHOD
+  statement: ANOVA within-dataset variance explained by Method across all budgets
+    is 5.00%.
+  macro: MacroVarMethodPct
+  expected_val: 5.0
+- id: CLAIM_C17_ANOVA_VAR_INTERACTION
+  statement: ANOVA variance explained by Method x Budget interaction is 3.37%.
+  macro: MacroVarMethodBudgetInteractPct
+  expected_val: 3.37
+- id: CLAIM_C18_ANOVA_VAR_PLATEAU_METHOD
+  statement: ANOVA variance explained by Method in deployable plateau regime (>=50%)
+    is 63.96%.
+  macro: MacroVarPlateauMethodPct
+  expected_val: 63.96
+- id: CLAIM_C19_ANOVA_PLATEAU_FSTAT
+  statement: ANOVA F-statistic for Method in plateau regime is F = 22.61.
+  macro: MacroANOVAPlateauFStatMethod
+  expected_val: 22.61
+- id: CLAIM_C20_CMSIS_BASELINE_CYCLES
+  statement: CMSIS-NN INT8 SIMD baseline hardware trace latency is 3.38 cycles/MAC.
+  macro: MacroCMSISBaselineCyclesPerMAC
+  expected_val: 3.38
+- id: CLAIM_C21_HW_UNPACK_OVERHEAD_3BIT
+  statement: 3-bit software unpack cycle penalty relative to scalar INT8 is 2.12x.
+  macro: MacroUnpackThreeBitPenalty
+  expected_val: 2.12
+- id: CLAIM_C22_HW_UNPACK_OVERHEAD_5BIT
+  statement: 5-bit software unpack cycle penalty relative to scalar INT8 is 3.41x.
+  macro: MacroSubByteUnpackPenalty
+  expected_val: 3.41
+- id: CLAIM_C23_HW_UNPACK_OVERHEAD_7BIT
+  statement: 7-bit software unpack cycle penalty relative to scalar INT8 is 3.41x.
+  macro: MacroPenaltySevenBit
+  expected_val: 3.41
+- id: CLAIM_C24_BREAK_EVEN_PENALTY_SIMD
+  statement: Break-even unpack penalty threshold under CMSIS-NN SIMD is p* <= 1.00x.
+  macro: MacroBreakEvenPenaltySIMD
+  expected_val: 1.0
+- id: CLAIM_C25_BREAK_EVEN_PENALTY_SCALAR
+  statement: Break-even unpack penalty threshold under naive scalar extraction is
+    p* = 1.35x.
+  macro: MacroBreakEvenPenalty
+  expected_val: 1.35
+- id: CLAIM_C26_CYCLES_FOUR_BIT_SIMD
+  statement: Hardware trace cycles/MAC for 4-bit SIMD is 5.28 cycles/MAC.
+  macro: MacroCyclesFourBitSIMD
+  expected_val: 5.28
+- id: CLAIM_C27_CYCLES_TWO_BIT_SIMD
+  statement: Hardware trace cycles/MAC for 2-bit SIMD is 4.51 cycles/MAC.
+  macro: MacroCyclesTwoBitSIMD
+  expected_val: 4.51
+- id: CLAIM_C28_SWEEP_CONFIGS
+  statement: Sensitivity sweep total evaluated parameter configurations is 888.
+  macro: MacroSensitivitySweepPoints
+  expected_val: 888.0
+- id: CLAIM_C29_PTQ_MEDIAN_DELTA_35
+  statement: Median accuracy drop in PTQ at 35% budget is 18.91 points.
+  macro: MacroPTQMedianDeltaThirtyFive
+  expected_val: 18.91
+- id: CLAIM_C30_FINETUNE_EPOCHS
+  statement: Default fine-tuning schedule evaluates 5 epochs.
+  macro: MacroFTEpochs
+  expected_val: 5.0

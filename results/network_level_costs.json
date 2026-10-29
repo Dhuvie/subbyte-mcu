@@ -1,0 +1,226 @@
+{
+  "separable_cnn": {
+    "description": "SeparableCNN (Vision)",
+    "dataset": "cifar10",
+    "input_shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "parameters": 496224,
+    "macs": 26436096,
+    "peak_activation_ram_bytes": 147456,
+    "peak_activation_ram_kib": 144.0,
+    "fp32_weight_bytes": 1984896,
+    "fp32_weight_kib": 1938.38,
+    "qpack_int8_bytes": 509862,
+    "qpack_int8_kib": 497.91,
+    "qpack_w4_bytes": 261750,
+    "qpack_w4_kib": 255.62,
+    "qpack_w2_bytes": 137694,
+    "qpack_w2_kib": 134.47,
+    "modelled_cycles_int8_simd": 39654144,
+    "modelled_cycles_int8_scalar": 52872192,
+    "modelled_cycles_w4_simd": 46263168,
+    "modelled_latency_stm32f446_int8_ms": 220.3,
+    "modelled_latency_stm32f446_w4_ms": 257.02,
+    "modelled_latency_nrf52840_int8_ms": 619.6,
+    "modelled_latency_nrf52840_w4_ms": 722.86,
+    "datasheet_fit_check": {
+      "STM32F446RE": {
+        "int8_fits": false,
+        "w4_fits": false,
+        "flash_util_pct_int8": 97.2,
+        "flash_util_pct_w4": 49.9,
+        "ram_util_pct": 112.5
+      },
+      "nRF52840": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 48.6,
+        "flash_util_pct_w4": 25.0,
+        "ram_util_pct": 56.2
+      }
+    }
+  },
+  "resnet8": {
+    "description": "ResNet-8 (Residual Vision)",
+    "dataset": "cifar10",
+    "input_shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "parameters": 77360,
+    "macs": 12501632,
+    "peak_activation_ram_bytes": 32768,
+    "peak_activation_ram_kib": 32.0,
+    "fp32_weight_bytes": 309440,
+    "fp32_weight_kib": 302.19,
+    "qpack_int8_bytes": 78674,
+    "qpack_int8_kib": 76.83,
+    "qpack_w4_bytes": 39994,
+    "qpack_w4_kib": 39.06,
+    "qpack_w2_bytes": 20654,
+    "qpack_w2_kib": 20.17,
+    "modelled_cycles_int8_simd": 18752448,
+    "modelled_cycles_int8_scalar": 25003264,
+    "modelled_cycles_w4_simd": 21877856,
+    "modelled_latency_stm32f446_int8_ms": 104.18,
+    "modelled_latency_stm32f446_w4_ms": 121.54,
+    "modelled_latency_nrf52840_int8_ms": 293.01,
+    "modelled_latency_nrf52840_w4_ms": 341.84,
+    "datasheet_fit_check": {
+      "STM32F446RE": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 15.0,
+        "flash_util_pct_w4": 7.6,
+        "ram_util_pct": 25.0
+      },
+      "nRF52840": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 7.5,
+        "flash_util_pct_w4": 3.8,
+        "ram_util_pct": 12.5
+      }
+    }
+  },
+  "fmnist_cnn": {
+    "description": "FashionCNN (Grayscale Vision)",
+    "dataset": "fmnist",
+    "input_shape": [
+      1,
+      1,
+      28,
+      28
+    ],
+    "parameters": 60320,
+    "macs": 5649536,
+    "peak_activation_ram_bytes": 37632,
+    "peak_activation_ram_kib": 36.75,
+    "fp32_weight_bytes": 241280,
+    "fp32_weight_kib": 235.62,
+    "qpack_int8_bytes": 61426,
+    "qpack_int8_kib": 59.99,
+    "qpack_w4_bytes": 31266,
+    "qpack_w4_kib": 30.53,
+    "qpack_w2_bytes": 16186,
+    "qpack_w2_kib": 15.81,
+    "modelled_cycles_int8_simd": 8474304,
+    "modelled_cycles_int8_scalar": 11299072,
+    "modelled_cycles_w4_simd": 9886688,
+    "modelled_latency_stm32f446_int8_ms": 47.08,
+    "modelled_latency_stm32f446_w4_ms": 54.93,
+    "modelled_latency_nrf52840_int8_ms": 132.41,
+    "modelled_latency_nrf52840_w4_ms": 154.48,
+    "datasheet_fit_check": {
+      "STM32F446RE": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 11.7,
+        "flash_util_pct_w4": 6.0,
+        "ram_util_pct": 28.7
+      },
+      "nRF52840": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 5.9,
+        "flash_util_pct_w4": 3.0,
+        "ram_util_pct": 14.4
+      }
+    }
+  },
+  "cnn1d": {
+    "description": "CNN1D (Sensor IMU)",
+    "dataset": "har",
+    "input_shape": [
+      1,
+      9,
+      128
+    ],
+    "parameters": 134336,
+    "macs": 5620096,
+    "peak_activation_ram_bytes": 16384,
+    "peak_activation_ram_kib": 16.0,
+    "fp32_weight_bytes": 537344,
+    "fp32_weight_kib": 524.75,
+    "qpack_int8_bytes": 135902,
+    "qpack_int8_kib": 132.72,
+    "qpack_w4_bytes": 68734,
+    "qpack_w4_kib": 67.12,
+    "qpack_w2_bytes": 35150,
+    "qpack_w2_kib": 34.33,
+    "modelled_cycles_int8_simd": 8430144,
+    "modelled_cycles_int8_scalar": 11240192,
+    "modelled_cycles_w4_simd": 9835168,
+    "modelled_latency_stm32f446_int8_ms": 46.83,
+    "modelled_latency_stm32f446_w4_ms": 54.64,
+    "modelled_latency_nrf52840_int8_ms": 131.72,
+    "modelled_latency_nrf52840_w4_ms": 153.67,
+    "datasheet_fit_check": {
+      "STM32F446RE": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 25.9,
+        "flash_util_pct_w4": 13.1,
+        "ram_util_pct": 12.5
+      },
+      "nRF52840": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 13.0,
+        "flash_util_pct_w4": 6.6,
+        "ram_util_pct": 6.2
+      }
+    }
+  },
+  "dscnn": {
+    "description": "DS-CNN-S (Audio KWS)",
+    "dataset": "speech",
+    "input_shape": [
+      1,
+      1,
+      49,
+      10
+    ],
+    "parameters": 22016,
+    "macs": 3187968,
+    "peak_activation_ram_bytes": 19200,
+    "peak_activation_ram_kib": 18.75,
+    "fp32_weight_bytes": 88064,
+    "fp32_weight_kib": 86.0,
+    "qpack_int8_bytes": 24060,
+    "qpack_int8_kib": 23.5,
+    "qpack_w4_bytes": 13052,
+    "qpack_w4_kib": 12.75,
+    "qpack_w2_bytes": 7548,
+    "qpack_w2_kib": 7.37,
+    "modelled_cycles_int8_simd": 4781952,
+    "modelled_cycles_int8_scalar": 6375936,
+    "modelled_cycles_w4_simd": 5578944,
+    "modelled_latency_stm32f446_int8_ms": 26.57,
+    "modelled_latency_stm32f446_w4_ms": 30.99,
+    "modelled_latency_nrf52840_int8_ms": 74.72,
+    "modelled_latency_nrf52840_w4_ms": 87.17,
+    "datasheet_fit_check": {
+      "STM32F446RE": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 4.6,
+        "flash_util_pct_w4": 2.5,
+        "ram_util_pct": 14.6
+      },
+      "nRF52840": {
+        "int8_fits": true,
+        "w4_fits": true,
+        "flash_util_pct_int8": 2.3,
+        "flash_util_pct_w4": 1.2,
+        "ram_util_pct": 7.3
+      }
+    }
+  }
+}

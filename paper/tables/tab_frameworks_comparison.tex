@@ -1,0 +1,21 @@
+% Comparison of Prior MCU and Edge Mixed-Precision Frameworks
+\begin{table*}[!t]
+\centering
+\caption{Systematic comparison of representative edge mixed-precision and TinyML quantization frameworks against this study.}
+\label{tab:frameworks_comparison}
+\scriptsize
+
+\begin{tabularx}{\textwidth}{l p{2.0cm} p{2.2cm} X p{2.2cm} p{1.6cm} c}
+\toprule
+\textbf{Framework} & \textbf{Bitwidth Scope} & \textbf{Hardware Target} & \textbf{Bit Allocation Strategy} & \textbf{Cost Model Basis} & \textbf{Trace Emulation} & \textbf{Artifact Status} \\
+\midrule
+HAQ~\cite{wang2019haq} & $\{1, \dots, 8\}$ bits & Edge GPU / ASIC / FPGA & Reinforcement Learning (DDPG) & Look-up table / cycle simulator & No (Simulator) & Public \\
+HAWQ-V1--V3~\cite{dong2019hawq, dong2020hawqv2, yao2021hawqv3} & $\{2, 4, 8\}$ bits & Server GPU / Tensor Core & Hessian top eigenvalue / trace (V1--V2); ILP (V3) & Theoretical arithmetic count & No (GPU-only) & Public \\
+ZeroQ~\cite{cai2020zeroq} & $\{2, 4, 8\}$ bits & Server / Desktop GPU & Pareto search on synthetic data & Arithmetic byte scaling & No & Public \\
+Rusci et al.~\cite{rusci2020quantization} & $\{2, 4, 8\}$ bits & STM32H7 (Arm Cortex-M7) & Memory-driven rule-based heuristic & Flash/SRAM capacity tracking & No (Benchmarked) & \parbox{2.4cm}{\raggedright Public \url{https://github.com/mrusci/training-mixed-precision-quantized-networks}} \\
+CMix-NN~\cite{capotondi2020cmixnn} & $\{2, 4, 8\}$ bits & Arm Cortex-M4/M7/L4 & Layer-wise assignment library & Hand-optimized kernel benchmarks & No (Kernels) & Public \\
+MCUNet~\cite{lin2020mcunet} & INT8 / INT4 uniform & Cortex-M4/M7 MCUs & TinyNAS joint architecture-search & SRAM/Flash memory profiler & No (Engine) & Public \\
+\textbf{This Work} & $\mathbf{\{2, \dots, 8\}}$ \textbf{vs} $\mathbf{\{2, 4, 8\}}$ & \textbf{Arm Cortex-M4} (180/64\,MHz) & \textbf{Measured-Sensitivity DP vs HAWQ} & \textbf{Instruction-level TRM DDI 0439D} & \textbf{Yes (Unicorn trace)} & \textbf{Open code and data} \\
+\bottomrule
+\end{tabularx}%
+\end{table*}

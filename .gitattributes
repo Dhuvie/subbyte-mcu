@@ -1,0 +1,31 @@
+# Source files normalized to LF
+*.py text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.md text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.cff text eol=lf
+*.txt text eol=lf
+*.cls text eol=lf
+*.sty text eol=lf
+*.bst text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+Makefile text eol=lf
+LICENSE text eol=lf
+
+# Binary / exact byte storage (preserve exact bytes for hashing and checksums)
+results/** -text
+*.jsonl -text
+*.json -text
+*SHA256SUMS* -text
+*.pdf -text
+*.pt -text
+*.png -text
+*.jpg -text
+*.parquet -text
+*.so -text
+*.dll -text
+*.map -text
+*.o -text

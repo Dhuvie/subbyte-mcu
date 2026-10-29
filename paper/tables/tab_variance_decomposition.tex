@@ -1,0 +1,23 @@
+\begin{table}[!t]
+\centering
+\caption{Factorial ANOVA with Interactions on Quantized Accuracy ($H_5$) on CIFAR-10 / SeparableCNN across 3 allocation methods, 4 budgets, 5 seeds ($N=60$ fine-tuned runs).}
+\label{tab:variance_decomposition}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Factor / Source of Variation} & \textbf{DF} & \textbf{Variance (\%)} & \textbf{F-Stat} & \textbf{p-Value} \\
+\midrule
+Target Bit Budget & 3 & 88.97\% & 532.80 & $<0.001$ \\
+Allocation Method & 2 & 5.00\% & 44.88 & $<0.001$ \\
+Method $\times$ Budget Interaction & 6 & 3.37\% & 10.08 & $<0.001$ \\
+Residual (Within-Cell / Seed Noise) & 48 & 2.67\% & -- & -- \\
+\midrule
+\multicolumn{5}{l}{\textit{Deployable Plateau Regime ($B \ge 50\%$, $N=30$ Runs):}} \\
+Allocation Method & 2 & 63.96\% & 22.61 & $<0.001$ \\
+Target Bit Budget & 1 & 1.23\% & 0.87 & $0.361 (n.s.)$ \\
+Method $\times$ Budget Interaction & 2 & 0.86\% & 0.30 & $0.741 (n.s.)$ \\
+Residual Noise & 24 & 33.95\% & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,30 @@
+% Mathematical Notation Table
+\begin{table}[!t]
+\centering
+\caption{Formal mathematical notation used throughout the paper.}
+\label{tab:notation}
+\footnotesize
+\begin{tabularx}{\columnwidth}{lX}
+\toprule
+\textbf{Symbol} & \textbf{Definition and Domain} \\
+\midrule
+$L$ & Total number of parameterised layers in the neural network ($l \in \{1, \dots, L\}$). \\
+$W_l, N_l$ & Weight tensor and parameter count of layer $l$ ($N_l = |W_l|$). \\
+$C_l$ & Number of output channels in layer $l$. \\
+$b_l, \mathbf{b}$ & Assigned bitwidth of layer $l$ and full allocation vector $\mathbf{b} = (b_1, \dots, b_L)$. \\
+$\mathcal{B}$ & Full candidate bitwidth set $\{2, 3, 4, 5, 6, 7, 8\}$. \\
+$\mathcal{B}_{\text{dep}}$ & Clean power-of-two deployable bitwidth set $\{2, 4, 8\}$. \\
+$S_{l, c}$ & Per-channel symmetric scale factor for channel $c \in \{1, \dots, C_l\}$ in layer $l$. \\
+$S_{\text{.qpack}}(\mathbf{b})$ & Concrete physical storage footprint in bytes under \texttt{.qpack} format. \\
+$S_{\text{max}}$ & Upper Flash memory capacity constraint in bytes. \\
+$B$ & Normalized Flash compression budget fraction relative to INT8 baseline. \\
+$\text{RAM}_{\text{act}}$ & Peak sequential double-buffered activation memory footprint in SRAM (KiB). \\
+$\text{RAM}_{\text{avail}}$ & Static on-chip SRAM capacity of target microcontroller (KiB). \\
+$\Delta \text{Acc}_l(b)$ & Empirical validation accuracy loss incurred by quantizing layer $l$ to $b$ bits. \\
+$A(\mathbf{b})$ & Top-1 classification test accuracy of the quantized model under allocation $\mathbf{b}$. \\
+$C(\mathbf{b})$ & Total modelled execution latency in clock cycles under instruction-level cost model. \\
+$p$ & Sub-byte software bit-unpack penalty multiplier relative to INT8 kernel baseline. \\
+$p^*$ & Analytical break-even unpack penalty threshold between $\mathcal{B}_{\text{dep}}$ and $\mathcal{B}$. \\
+\bottomrule
+\end{tabularx}
+\end{table}

@@ -1,0 +1,177 @@
+[
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "seed": 42,
+    "fp32_test_acc": 94.91,
+    "train_time_s": 20.8
+  },
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "seed": 43,
+    "fp32_test_acc": 93.38,
+    "train_time_s": 13.3
+  },
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "seed": 44,
+    "fp32_test_acc": 93.48,
+    "train_time_s": 13.4
+  },
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "seed": 45,
+    "fp32_test_acc": 93.72,
+    "train_time_s": 12.9
+  },
+  {
+    "dataset": "har",
+    "model": "cnn1d",
+    "seed": 46,
+    "fp32_test_acc": 93.15,
+    "train_time_s": 12.8
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "seed": 42,
+    "fp32_test_acc": 91.67,
+    "train_time_s": 17.7
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "seed": 43,
+    "fp32_test_acc": 91.4,
+    "train_time_s": 14.0
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "seed": 44,
+    "fp32_test_acc": 90.27,
+    "train_time_s": 13.7
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "seed": 45,
+    "fp32_test_acc": 93.0,
+    "train_time_s": 13.5
+  },
+  {
+    "dataset": "speech",
+    "model": "dscnn",
+    "seed": 46,
+    "fp32_test_acc": 92.33,
+    "train_time_s": 13.5
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "seed": 42,
+    "fp32_test_acc": 91.83,
+    "train_time_s": 92.6
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "seed": 43,
+    "fp32_test_acc": 91.83,
+    "train_time_s": 87.3
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "seed": 44,
+    "fp32_test_acc": 91.95,
+    "train_time_s": 93.1
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "seed": 45,
+    "fp32_test_acc": 91.53,
+    "train_time_s": 87.5
+  },
+  {
+    "dataset": "fmnist",
+    "model": "fmnist_cnn",
+    "seed": 46,
+    "fp32_test_acc": 91.85,
+    "train_time_s": 88.7
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "seed": 42,
+    "fp32_test_acc": 84.09,
+    "train_time_s": 114.6
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "seed": 43,
+    "fp32_test_acc": 84.32,
+    "train_time_s": 104.95963716506958
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "seed": 44,
+    "fp32_test_acc": 83.95,
+    "train_time_s": 107.72116827964783
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "seed": 45,
+    "fp32_test_acc": 83.67999999999999,
+    "train_time_s": 106.67544603347778
+  },
+  {
+    "dataset": "cifar10",
+    "model": "resnet8",
+    "seed": 46,
+    "fp32_test_acc": 83.84,
+    "train_time_s": 106.84569454193115
+  },
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "seed": 42,
+    "fp32_test_acc": 87.78,
+    "train_time_s": 424.8
+  },
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "seed": 43,
+    "fp32_test_acc": 87.09,
+    "train_time_s": 415.5538227558136
+  },
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "seed": 44,
+    "fp32_test_acc": 87.72999999999999,
+    "train_time_s": 409.95028424263
+  },
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "seed": 45,
+    "fp32_test_acc": 87.29,
+    "train_time_s": 409.7487909793854
+  },
+  {
+    "dataset": "cifar10",
+    "model": "separable_cnn",
+    "seed": 46,
+    "fp32_test_acc": 87.74,
+    "train_time_s": 406.4247176647186
+  }
+]

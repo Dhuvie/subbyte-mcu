@@ -1,0 +1,15 @@
+\begin{table*}[!t]
+\centering
+\caption{Empirical Validation of Mixed-Precision Assumptions: Formula Score vs Measured Sensitivity ($H_1$) and Error Additivity ($H_2$) across sensitivity sweeps and 200 random allocations.}
+\label{tab:sens_additivity}
+\footnotesize
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Model / Dataset} & \textbf{Score vs Sensitivity $\rho$ ($H_1$)} & \textbf{Partial $\rho$ (Size Controlled)} & \textbf{Additivity $\rho$ ($H_2$)} & \textbf{MAE (\%) ($H_2$)} \\
+\midrule
+ResNet-8 (CIFAR-10) & \MacroResNetRho & \MacroResNetPartialRho & \MacroAdditivityRho & \MacroAdditivityMAE \\
+SeparableCNN (CIFAR-10) & \MacroSeparableCNNRho & \MacroPartialRho & -- & -- \\
+DSCNN (Speech Commands) & \MacroSpeechRho & \MacroSpeechPartialRho & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

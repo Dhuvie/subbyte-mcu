@@ -1,0 +1,220 @@
+{
+  "dot_product_int8": {
+    "function_name": "dot_product_int8",
+    "return_val": 38527,
+    "total_instructions": 428,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 168,
+      "store": 1,
+      "extend": 128,
+      "load": 33,
+      "mac": 64,
+      "branch": 32,
+      "load_multi": 1
+    },
+    "total_cycles": 497,
+    "cycles_per_mac": 3.8828125,
+    "n_macs": 128,
+    "bitwidth": 8,
+    "path_type": "scalar",
+    "penalty_vs_int8": 1.0
+  },
+  "dot_product_int8_opt": {
+    "function_name": "dot_product_int8_opt",
+    "return_val": 45197,
+    "total_instructions": 381,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 139,
+      "load": 32,
+      "extend": 128,
+      "mac": 64,
+      "branch": 16,
+      "load_multi": 1
+    },
+    "total_cycles": 433,
+    "cycles_per_mac": 3.3828125,
+    "n_macs": 128,
+    "bitwidth": 8,
+    "path_type": "simd_opt",
+    "penalty_vs_int8": 0.8712273641851107
+  },
+  "dot_product_int4_naive": {
+    "function_name": "dot_product_int4_naive",
+    "return_val": -3912,
+    "total_instructions": 527,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 365,
+      "load": 32,
+      "bitfield": 112,
+      "branch": 16,
+      "load_multi": 1
+    },
+    "total_cycles": 579,
+    "cycles_per_mac": 4.5234375,
+    "n_macs": 128,
+    "bitwidth": 4,
+    "path_type": "scalar",
+    "penalty_vs_int8": 1.164989939637827
+  },
+  "dot_product_int4_opt": {
+    "function_name": "dot_product_int4_opt",
+    "return_val": 1409,
+    "total_instructions": 608,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 380,
+      "store": 2,
+      "load": 48,
+      "bitfield": 32,
+      "extend": 64,
+      "mac": 64,
+      "branch": 16,
+      "load_multi": 1
+    },
+    "total_cycles": 676,
+    "cycles_per_mac": 5.28125,
+    "n_macs": 128,
+    "bitwidth": 4,
+    "path_type": "simd_opt",
+    "penalty_vs_int8": 1.3601609657947686
+  },
+  "dot_product_int2_naive": {
+    "function_name": "dot_product_int2_naive",
+    "return_val": 1376,
+    "total_instructions": 469,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 331,
+      "load": 8,
+      "bitfield": 120,
+      "branch": 8,
+      "load_multi": 1
+    },
+    "total_cycles": 489,
+    "cycles_per_mac": 3.8203125,
+    "n_macs": 128,
+    "bitwidth": 2,
+    "path_type": "scalar",
+    "penalty_vs_int8": 0.9839034205231388
+  },
+  "dot_product_int2_opt": {
+    "function_name": "dot_product_int2_opt",
+    "return_val": 1073,
+    "total_instructions": 565,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 467,
+      "load": 8,
+      "mac": 64,
+      "bitfield": 24,
+      "load_multi": 1
+    },
+    "total_cycles": 577,
+    "cycles_per_mac": 4.5078125,
+    "n_macs": 128,
+    "bitwidth": 2,
+    "path_type": "simd_opt",
+    "penalty_vs_int8": 1.1609657947686116
+  },
+  "dot_product_int3": {
+    "function_name": "dot_product_int3",
+    "return_val": 3722,
+    "total_instructions": 1430,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 1168,
+      "branch": 36,
+      "load": 96,
+      "mac": 128,
+      "load_multi": 1
+    },
+    "total_cycles": 1566,
+    "cycles_per_mac": 12.234375,
+    "n_macs": 128,
+    "bitwidth": 3,
+    "path_type": "scalar",
+    "penalty_vs_int8": 3.1509054325955734
+  },
+  "dot_product_int3_opt": {
+    "function_name": "dot_product_int3_opt",
+    "return_val": -1297,
+    "total_instructions": 817,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 653,
+      "store": 2,
+      "load": 80,
+      "mac": 64,
+      "branch": 16,
+      "load_multi": 1
+    },
+    "total_cycles": 917,
+    "cycles_per_mac": 7.1640625,
+    "n_macs": 128,
+    "bitwidth": 3,
+    "path_type": "simd_opt",
+    "penalty_vs_int8": 1.8450704225352113
+  },
+  "dot_product_int5": {
+    "function_name": "dot_product_int5",
+    "return_val": 8946,
+    "total_instructions": 1526,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 1232,
+      "branch": 36,
+      "load": 128,
+      "mac": 128,
+      "load_multi": 1
+    },
+    "total_cycles": 1694,
+    "cycles_per_mac": 13.234375,
+    "n_macs": 128,
+    "bitwidth": 5,
+    "path_type": "scalar",
+    "penalty_vs_int8": 3.408450704225352
+  },
+  "dot_product_int6": {
+    "function_name": "dot_product_int6",
+    "return_val": -6993,
+    "total_instructions": 1440,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 1050,
+      "branch": 36,
+      "load": 128,
+      "mac": 128,
+      "bitfield": 64,
+      "extend": 32,
+      "load_multi": 1
+    },
+    "total_cycles": 1608,
+    "cycles_per_mac": 12.5625,
+    "n_macs": 128,
+    "bitwidth": 6,
+    "path_type": "scalar",
+    "penalty_vs_int8": 3.2354124748490944
+  },
+  "dot_product_int7": {
+    "function_name": "dot_product_int7",
+    "return_val": -24184,
+    "total_instructions": 1527,
+    "category_counts": {
+      "store_multi": 1,
+      "alu": 1233,
+      "branch": 36,
+      "load": 128,
+      "mac": 128,
+      "load_multi": 1
+    },
+    "total_cycles": 1695,
+    "cycles_per_mac": 13.2421875,
+    "n_macs": 128,
+    "bitwidth": 7,
+    "path_type": "scalar",
+    "penalty_vs_int8": 3.41046277665996
+  }
+}
