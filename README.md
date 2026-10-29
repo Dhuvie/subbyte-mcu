@@ -5,6 +5,7 @@
 [![Target Architecture](https://img.shields.io/badge/Target-ARM%20Cortex--M4-0091BD.svg)](https://developer.arm.com/Processors/Cortex-M4)
 [![Reproducibility](https://img.shields.io/badge/Reproducibility-Verified%20(8%2F8%20Checks)-brightgreen.svg)](scripts/check.py)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1437810900.svg)](https://doi.org/10.5281/zenodo.23750996)
 
 This repository contains the standalone open-source implementation, instruction-level hardware cost model, and experimental replication suite for the paper:
 
