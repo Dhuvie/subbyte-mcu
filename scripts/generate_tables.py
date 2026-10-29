@@ -1166,7 +1166,7 @@ def generate_numbers_tex(runs_path: Path, fp32_path: Path, tests_path: Path, tra
         runs_sha256 = hashlib.sha256(f_hash.read()).hexdigest()
     macros.append(f"\\newcommand{{\\MacroRunsMultiseedSHA}}{{{runs_sha256}}}")
     macros.append(f"\\newcommand{{\\MacroRepositoryRelease}}{{v1.0}}")
-    macros.append(r"\newcommand{\archivedoi}{10.5281/zenodo.23750997}")
+    macros.append(r"\newcommand{\archivedoi}{10.5281/zenodo.23751746}")
     macros.append(r"\newcommand{\MacroSectionNeedspace}{5}")
     macros.append(f"\\newcommand{{\\MacroFlashReductionFour}}{{50}}")
     macros.append(f"\\newcommand{{\\MacroFlashReductionTwo}}{{75}}")
