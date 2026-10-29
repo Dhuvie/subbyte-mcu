@@ -92,6 +92,69 @@ def check_sha256sums() -> bool:
 
     return True
 
+def check_readme_cycle_table() -> bool:
+    print("\n--- Verifying README.md Instruction Cycle Summary Table ---")
+    readme_path = ROOT / "README.md"
+    trace_path = RESULTS_DIR / "hardware_trace_costs.json"
+    if not readme_path.exists():
+        print(f"[FAIL] README.md missing: {readme_path}")
+        return False
+    if not trace_path.exists():
+        print(f"[FAIL] hardware_trace_costs.json missing: {trace_path}")
+        return False
+
+    import json
+    with open(trace_path, "r", encoding="utf-8") as f:
+        traces = json.load(f)
+
+    rows_metadata = [
+        ("dot_product_int8_opt", "INT8 Baseline (CMSIS-NN Style)", "SIMD"),
+        ("dot_product_int8", "INT8 Scalar Baseline", "Scalar"),
+        ("dot_product_int4_opt", "INT4 Optimised SIMD (SXTB16)", "SIMD"),
+        ("dot_product_int4_naive", "INT4 Naive Scalar (SBFX)", "Scalar"),
+        ("dot_product_int2_opt", "INT2 Optimised SIMD (SXTB16)", "SIMD"),
+        ("dot_product_int2_naive", "INT2 Naive Scalar (SBFX)", "Scalar"),
+        ("dot_product_int3_opt", "INT3 Aligned Unpack + SMLAD", "SIMD"),
+        ("dot_product_int3", "INT3 Scalar Bitfield Extract", "Scalar"),
+        ("dot_product_int5", "INT5 Sub-Byte Unaligned Scalar", "Scalar"),
+        ("dot_product_int6", "INT6 Semi-Aligned Scalar", "Scalar"),
+        ("dot_product_int7", "INT7 Sub-Byte Unaligned Scalar", "Scalar"),
+    ]
+
+    readme_text = readme_path.read_text(encoding="utf-8")
+    errors = []
+    for key, name, path_label in rows_metadata:
+        if key not in traces:
+            errors.append(f"Trace key {key} missing from hardware_trace_costs.json")
+            continue
+        expected_inst = traces[key]["total_instructions"]
+        expected_cyc = f"{traces[key]['cycles_per_mac']:.2f}"
+
+        row_pat = re.compile(
+            r"\|\s*\*\*" + re.escape(name) + r"\*\*\s*\|\s*" +
+            re.escape(path_label) + r"\s*\|\s*(\d+)\s*\|\s*\*\*([0-9.]+)\*\*",
+            re.IGNORECASE
+        )
+        match = row_pat.search(readme_text)
+        if not match:
+            errors.append(f"Row for '{name}' not found in README.md table")
+            continue
+        parsed_inst = int(match.group(1))
+        parsed_cyc = match.group(2)
+        if parsed_inst != expected_inst:
+            errors.append(f"Instruction mismatch for {name}: README has {parsed_inst}, expected {expected_inst}")
+        if parsed_cyc != expected_cyc:
+            errors.append(f"Cycle count mismatch for {name}: README has {parsed_cyc}, expected {expected_cyc}")
+
+    if errors:
+        print(f"[FAIL] {len(errors)} README cycle table mismatches:")
+        for err in errors:
+            print(f"  - {err}")
+        return False
+
+    print("SUCCESS: README.md cycle table values equal hardware_trace_costs.json exactly.")
+    return True
+
 def check_table_and_numbers_drift() -> bool:
     print("\n--- [Check 2/7] Checking Table and numbers.tex Drift Against Results Store ---")
     with tempfile.TemporaryDirectory() as tmp_dir_str:
@@ -507,6 +570,7 @@ def main():
 
     checks = [
         check_sha256sums,
+        check_readme_cycle_table,
         check_table_and_numbers_drift,
         check_macro_definitions,
         check_claims,

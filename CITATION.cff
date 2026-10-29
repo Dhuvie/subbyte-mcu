@@ -5,7 +5,9 @@ authors:
     given-names: "Dhruv Narayan"
     email: "thedhruvbajaj@users.noreply.github.com"
 title: "Is Sub-Byte Weight Quantization Worth It on Microcontrollers? Measured Sensitivity, Allocation Algorithms, and a Hardware Cost Model"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-29
+url: "https://github.com/Dhuvie/subbyte-mcu"
+repository-code: "https://github.com/Dhuvie/subbyte-mcu"
 doi: "10.5281/zenodo.23750997"
 license: MIT

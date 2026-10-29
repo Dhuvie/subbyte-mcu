@@ -79,7 +79,7 @@ subbyte-mcu/
 Requires Python 3.10+ (tested on Python 3.10.12 and 3.12.3).
 ```bash
 # Clone the repository
-git clone https://github.com/dhruvnarayanbajaj/subbyte-mcu.git
+git clone https://github.com/Dhuvie/subbyte-mcu.git
 cd subbyte-mcu
 
 # Create and activate virtual environment
@@ -157,16 +157,23 @@ Instruction traces and cycle counts are evaluated by running the compiled kernel
 python subbyte/cost_model/trace_cost_model.py
 ```
 
-### 3. Instruction Cycle Summary (ARM TRM DDI 0439D Table 3-1)
+### 3. Instruction Cycle Summary (Measured Traces & Analytical Model)
 
-| Bitwidth | Unroll / MACs | Execution Path | Cycles / MAC | Penalty vs INT8 | Flash Savings |
-|:---:|:---:|:---|:---:|:---:|:---:|
-| **INT8** | 4 | SIMD `SXTB16` + `SMLAD` | **2.00** | $1.00\times$ | 0.0% |
-| **INT4** | 8 | SIMD Unpack + `SMLAD` | **1.75** | $0.88\times$ | 50.0% |
-| **INT2** | 16 | Packed SIMD + `SMLAD` | **1.56** | $0.78\times$ | 75.0% |
-| **INT3** | 8 | Unaligned `SBFX` + `MLA` | **4.00** | $2.00\times$ | 62.5% |
-| **INT5** | 8 | Unaligned `SBFX` + `MLA` | **4.25** | $2.12\times$ | 37.5% |
-| **INT7** | 8 | Unaligned `SBFX` + `MLA` | **4.50** | $2.25\times$ | 12.5% |
+Instruction-level execution costs grounded in measured Unicorn CPU emulator traces (`results/hardware_trace_costs.json`) and analytical cycle counts from ARM Cortex-M4 TRM DDI 0439D Table 3-1:
+
+| Kernel Variant | Path | Trace Inst / 128 MAC | Trace Cyc / MAC | Model Cyc / MAC (ARM TRM Table 3-1) | Penalty vs INT8 (Like-for-Like) | Flash Savings |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **INT8 Baseline (CMSIS-NN Style)** | SIMD | 381 | **3.38** | 1.50-2.00 | 1.00x (SIMD Baseline) | 0.0% |
+| **INT8 Scalar Baseline** | Scalar | 428 | **3.88** | 2.00 | 1.00x (Scalar Baseline) | 0.0% |
+| **INT4 Optimised SIMD (SXTB16)** | SIMD | 608 | **5.28** | 1.75 | 1.56x (vs INT8 SIMD) | 50.0% |
+| **INT4 Naive Scalar (SBFX)** | Scalar | 527 | **4.52** | 2.88 | 1.16x (vs INT8 Scalar) | 50.0% |
+| **INT2 Optimised SIMD (SXTB16)** | SIMD | 565 | **4.51** | 1.56 | 1.33x (vs INT8 SIMD) | 75.0% |
+| **INT2 Naive Scalar (SBFX)** | Scalar | 469 | **3.82** | 2.69 | 0.98x (vs INT8 Scalar) | 75.0% |
+| **INT3 Aligned Unpack + SMLAD** | SIMD | 817 | **7.16** | 3.00 | 2.12x (vs INT8 SIMD) | 62.5% |
+| **INT3 Scalar Bitfield Extract** | Scalar | 1430 | **12.23** | 4.00 | 3.15x (vs INT8 Scalar) | 62.5% |
+| **INT5 Sub-Byte Unaligned Scalar** | Scalar | 1526 | **13.23** | 4.25 | 3.41x (vs INT8 Scalar) | 37.5% |
+| **INT6 Semi-Aligned Scalar** | Scalar | 1440 | **12.56** | 4.25 | 3.24x (vs INT8 Scalar) | 25.0% |
+| **INT7 Sub-Byte Unaligned Scalar** | Scalar | 1527 | **13.24** | 4.50 | 3.41x (vs INT8 Scalar) | 12.5% |
 
 ---
 
